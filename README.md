@@ -11,3 +11,6 @@ This project was developed with the following technologies:
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
 
+## Project
+
+The purpose of the project is to connect people who are looking for company to play games.
