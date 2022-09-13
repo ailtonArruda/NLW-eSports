@@ -10,6 +10,7 @@ This project was developed with the following technologies:
 - [Expo](https://expo.dev/)
 - [React](https://pt-br.reactjs.org/)
 - [React Native](https://reactnative.dev/)
+- [Tailwind](https://tailwindcss.com/)
 
 ## Project
 
