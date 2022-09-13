@@ -1,21 +1,76 @@
-interface ButtonProps {
-  title: string;
-}
+import './styles/main.css';
+import { MagnifyingGlassPlus } from 'phosphor-react'
 
-function Button(propriedade: ButtonProps){
-  return (
-    <button>
-      {propriedade.title}
-    </button>
-  )
-}
+import logo from './asets/logo.svg';
 
 function App() {
   return (
-    <div>
-      <Button title="send 1"/>
-      <Button title="send 2"/>
-      <Button title="send 3"/>
+    <div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
+      <img src={logo} alt="logo"/>
+
+      <h1 className='text-6xl text-white font-black mt-20'>
+        Seu <span className='bg-nlw-gradient bg-clip-text text-transparent '>duo</span> está aqui.
+      </h1>
+
+      <div className="grid grid-cols-6 gap-6 mt-16">
+        <a href='' className="relative rounded-lg overflow-hidden">
+          <img src="/img_1.png"/>
+          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+            <strong className="font-bold text-white block">League of Legends</strong>
+            <span className="text-zinc-300 text-sm block">4 anúncios</span>
+          </div>
+        </a>
+        <a href='' className="relative rounded-lg overflow-hidden">
+          <img src="/img_2.png"/>
+          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+            <strong className="font-bold text-white block">Dota 2</strong>
+            <span className="text-zinc-300 text-sm block">4 anúncios</span>
+          </div>
+        </a>
+        <a href='' className="relative rounded-lg overflow-hidden">
+          <img src="/img_3.png"/>
+          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+            <strong className="font-bold text-white block">Counter-Strike: Global Offensive</strong>
+            <span className="text-zinc-300 text-sm block">4 anúncios</span>
+          </div>
+        </a>
+        <a href='' className="relative rounded-lg overflow-hidden">
+          <img src="/img_4.png"/>
+          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+            <strong className="font-bold text-white block">World of Warcraft</strong>
+            <span className="text-zinc-300 text-sm block">4 anúncios</span>
+          </div>
+        </a>
+        <a href='' className="relative rounded-lg overflow-hidden">
+          <img src="/img_5.png"/>
+          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+            <strong className="font-bold text-white block">Apex Legends</strong>
+            <span className="text-zinc-300 text-sm block">4 anúncios</span>
+          </div>
+        </a>
+        <a href='' className="relative rounded-lg overflow-hidden">
+          <img src="/img_6.png"/>
+          <div className="w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0">
+            <strong className="font-bold text-white block">Fortinite</strong>
+            <span className="text-zinc-300 text-sm block">4 anúncios</span>
+          </div>
+        </a>
+      </div>
+
+      <div className="bg-nlw-gradient pt-1 mt-8 self-stretch rounded-lg overflow-hidden">
+        <div className="bg-[#2A2634] px-8 py-6 flex justify-between items-center">
+          <div>
+            <strong className="text-2xl text-white font-black block">Não encontrou seu duo?</strong>
+            <span className="text-zinc-400 block">Publique um anúncio para encontrar novos players!</span>
+          </div>
+
+          <button className="py-3 px-4 bg-violet-500 text-white hover:bg-violet-600 rounded flex items-center gap-3">
+            <MagnifyingGlassPlus size={24}/>
+            Publicar anúncio
+          </button>
+
+        </div>
+      </div>
     </div>
   )
 }
